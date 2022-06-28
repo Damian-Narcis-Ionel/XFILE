@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "interface": {
+            "interfaceName": "interface_1",
+            "interfaceDescription": "Description for interface_1"
+        },
+        "priority": 2,
+        "active": true,
+        "from": "12:30:00",
+        "to": "23:30:00",
+        "expected": 1,
+        "relation": "=="
+    }, {
+        "id": 2,
+        "interface": {
+            "interfaceName": "interface_2",
+            "interfaceDescription": "Description for interface_2"
+        },
+        "priority": 4,
+        "active": true,
+        "from": "23:00:00",
+        "to": "01:00:00",
+        "expected": 8,
+        "relation": ">="
+    }, {
+        "id": 3,
+        "interface": {
+            "interfaceName": "interface_3",
+            "interfaceDescription": "Description for interface_3"
+        },
+        "priority": 1,
+        "active": true,
+        "from": "00:30:00",
+        "to": "17:00:00",
+        "expected": 17,
+        "relation": "<="
+    }, {
+        "id": 4,
+        "interface": {
+            "interfaceName": "interface_4",
+            "interfaceDescription": "Description for interface_4"
+        },
+        "priority": 3,
+        "active": false,
+        "from": "02:00:00",
+        "to": "05:00:00",
+        "expected": 2,
+        "relation": ">="
+    }
+]
